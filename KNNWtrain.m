@@ -1,6 +1,6 @@
 function [outputArg] = KNNWtrain(inputArg1,inputArg2,inputArg3,inputArg4)
 %两向量距离的计算引入内权重，使用基于概率的方法计算外权重
-%   输入sgcd或sgsc数组、K值、内权重、外权重确定方法参数（0为基于概率的，1为基于距离的），输出该K值时的误差
+%   输入训练用数组、K值、内权重、外权重确定方法参数（0为基于概率的，1为基于距离的），输出该K值时的误差
 sgscORcd=inputArg1;
 K=inputArg2;
 w=inputArg3;
@@ -45,7 +45,7 @@ for i=1:31
     zuijinzu(1)=[];%去掉第一个数，因为是0
     %生成外权重
     if way==0%此时使用概率方法
-        W=Wprob(zuijinzu,itemindex);
+        W=Wprob(zuijinzu,itemindex);%可以在此处替代成自己想用的外权重函数
     else%此时使用距离方法
         W=Wdist(abs(zuijinzu-tests(2)));
     end
