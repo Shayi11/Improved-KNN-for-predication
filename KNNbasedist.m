@@ -1,6 +1,6 @@
 function [outputArg] = KNNbasedist(inputArg1,inputArg2)
 %是基础款的两向量距离计算
-%   输入是两个样本，输出是样本间欧氏距离和第二个输入的sgID（为后续寻找K个变量做准备）
+%   输入是两个样本，输出是样本间欧氏距离和第二个输入的样本ID（为后续寻找K个变量做准备）
 A=inputArg1;
 B=inputArg2;
 
