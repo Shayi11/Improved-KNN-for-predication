@@ -1,6 +1,6 @@
 function [outputArg] = KNNWwpred(inputArg1,inputArg2,inputArg3,inputArg4,inputArg5,inputArg6)
 %带有内外权重的KNN预测
-%   输入yanzheng、sgsj、最优K值、待测对象参数（输入1是空间预测，输入2是时间预测）、内权重、外权重确定方法，输出预测结果与真实结果
+%   输入待预测数组、训练数组、最优K值、待测对象参数（输入1是空间预测，输入2是时间预测）、内权重、外权重确定方法，输出预测结果与真实结果
 Kyanzheng=inputArg1;
 Kyanzheng(:,inputArg4+1)=[];%根据待测对象参数，去掉对应的列
 Kshijian=inputArg2;
