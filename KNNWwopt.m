@@ -1,6 +1,6 @@
 function [outputArg] = KNNWwopt(inputArg1,inputArg2,inputArg3)
 %多次运行KNNWtrain函数，寻找最优K值
-%   输入sgcd或sgsc数组、内权重值、外权重确定方法参数，输出各K值下的误差，默认K从1到30
+%   输入训练用数组、内权重值、外权重确定方法参数，输出各K值下的误差，默认K从1到30
 sgscORcd=inputArg1;
 w=inputArg2;
 way=inputArg3;
