@@ -12,3 +12,8 @@ KNNwdist是具有内权重的两向量距离计算
 Wprobe是基于概率的外权重值计算
 Wdist是基于距离的外权重值计算
 KNNWtrain是具有内外权重的KNN训练以寻找最优K值的
+
+内权重ω：Distance=‖ω∙(x_PRE-x_OLD )‖
+外权重W：〖Y〗_PRE=∑_1^(K_optimal)▒〖W_Y∙〖Y〗_OLD 〗
+外权重就是KNN模型中，决定中心点的K个点的权重值（下图中的箭头点）；内权重就是KNN模型中计算距离时各自变量的权重
+![image](https://user-images.githubusercontent.com/55230503/111304230-73bb4f00-8690-11eb-83f5-e4ef55360c78.png)
