@@ -1,6 +1,6 @@
 function [outputArg] = KNNbasetrain(inputArg1,inputArg2)
 %基础款KNN的训练，寻找最优K用的
-%   输入sgcd或sgsc数组和K值，输出该K值时的误差
+%   输入训练用数组和K值，输出该K值时的误差
 sgscORcd=inputArg1;
 K=inputArg2;
 
