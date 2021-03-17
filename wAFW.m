@@ -1,6 +1,6 @@
 function [outputArg] = wAFW(inputArg1,inputArg2)
 %使用AFW算法确定内权重
-%   算法的输入为sgsc或sgcd和AFW算法的h值（该h值是用于将时长或长度划分为合适宽度的h个组），输出为各影响变量的权重
+%   算法的输入为训练数组和AFW算法的h值（该h值是用于将时长或长度划分为合适宽度的h个组），输出为各影响变量的权重
 
 sgscORcd=inputArg1;
 h=inputArg2;
