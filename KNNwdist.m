@@ -1,6 +1,6 @@
 function [outputArg] = KNNwdist(inputArg1,inputArg2,inputArg3)
 %引入内权重计算两向量的距离
-%   输入是两个样本和内权重（来自C45或AFW），输出是样本间加权欧氏距离和第二个输入的sgID
+%   输入是两个样本和内权重（来自C45或AFW），输出是样本间加权欧氏距离和第二个输入的数据ID
 A=inputArg1;
 B=inputArg2;
 w=inputArg3;%内权重
