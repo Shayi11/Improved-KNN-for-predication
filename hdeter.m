@@ -1,6 +1,6 @@
 function [outputArg] = hdeter(inputArg)
 %确定kmeans++的最优h值
-%   算法的输入为sgsc或sgcd，输出为各的h值区分度指标
+%   算法的输入为训练数据，输出为各的h值区分度指标
 
 sgscORcd=inputArg;
 X=sgscORcd(:,[3:end]);
