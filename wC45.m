@@ -1,6 +1,6 @@
 function [outputArg] = wC45(inputArg)
 %使用C4.5算法计算内权重
-%   算法的输入为sgsc或sgcd，输出为各影响变量的权重
+%   算法的输入为训练数组，输出为各影响变量的权重
 
 sgscORcd=inputArg;
 Y=sgscORcd(:,2);
