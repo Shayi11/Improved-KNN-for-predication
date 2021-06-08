@@ -14,7 +14,7 @@ for i=1:30
         e=KNNWtrain(sgscORcd,K,w,way);
         E=e+E;
     end
-    wuchazu=[wuchazu;mean(E)];
+    wuchazu=[wuchazu;E/100];%求100次误差和的平均值
 end
 wuchazu(1)=[];
 
