@@ -12,7 +12,7 @@ for i=1:30
         e=KNNbasetrain(sgscORcd,K);
         E=e+E;
     end
-    wuchazu=[wuchazu;mean(E)];
+    wuchazu=[wuchazu;E/100];%求100次误差和的均值
 end
 wuchazu(1)=[];
 
