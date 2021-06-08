@@ -16,7 +16,7 @@ B(3:16)=B1;
 %欧氏距离计算
 dist=0;
 for i=1:14%这是因为其适用案例的数据有14个自变量
-    temp=w(i)*(A(i)-B(i))^2;
+    temp=w(i)*(A(i+2)-B(i+2))^2;
     dist=dist+temp;
 end
 dist=sqrt(dist);
